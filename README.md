@@ -80,6 +80,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - Inspired by the tutorial: [Python Django 7 Hour Course](https://www.youtube.com/watch?v=PtQiiknWUcI)
 - Thanks to the open-source community for various resources and tools.
 
----
-
-Feel free to customize this README to better fit your project's specifics, such as adding actual links, screenshots, or additional sections as needed. 
