@@ -48,7 +48,7 @@ AUTH_USER_MODEL = "base.User"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -139,7 +139,7 @@ MEDIA_URL = "userprofilepicture/"
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'static'
+    os.path.join(BASE_DIR / 'static')
 ]
 
 MEDIA_ROOT = BASE_DIR / "static/images/userprofilepicture"
