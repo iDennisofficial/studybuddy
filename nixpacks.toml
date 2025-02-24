@@ -1,2 +1,4 @@
-[phases.setup]
-nixPkgs = ["gcc", "postgresql_16", "python39", "libpq"]
+[build]
+builder = "NIXPACKS"
+buildCommand = "nix-env -iA nixpkgs.gcc nixpkgs.postgresql_16 nixpkgs.python39"
+
