@@ -1,20 +1,19 @@
 {
-    "$schema": "https://railway.com/railway.schema.json",
-    "build": {
+  "$schema": "https://railway.com/railway.schema.json",
+  "build": {
       "builder": "NIXPACKS",
-      "buildCommand": "nix-env -iA nixpkgs.gcc nixpkgs.postgresql_16 nixpkgs.python39"
-    },
-    "deploy": {
+      "buildCommand": "nix-env -iA nixpkgs.gcc && nix-env -iA nixpkgs.postgresql_16 && nix-env -iA nixpkgs.python39"
+  },
+  "deploy": {
       "runtime": "V2",
       "numReplicas": 1,
       "sleepApplication": false,
       "multiRegionConfig": {
-        "us-west1": {
-          "numReplicas": 1
-        }
+          "us-west1": {
+              "numReplicas": 1
+          }
       },
       "restartPolicyType": "ON_FAILURE",
       "restartPolicyMaxRetries": 10
-    }
   }
-  
+}

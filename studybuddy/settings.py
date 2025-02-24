@@ -28,6 +28,8 @@ else:
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'studybuddy-web.up.railway.app']
 
+
+
 CSRF_TRUSTED_ORIGINS = ['https://studybuddy-web.up.railway.app']
 
 # Application definition
